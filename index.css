@@ -1,0 +1,96 @@
+/* client/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small app-level tweaks */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply text-neutral-800;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(100, 116, 139, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+/* Professional glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Professional button styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-primary-700 to-primary-800 hover:from-primary-800 hover:to-primary-900 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-primary-300 border border-primary-600;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-neutral-600 to-neutral-700 hover:from-neutral-700 hover:to-neutral-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-neutral-400 border border-neutral-500;
+}
+
+.btn-success {
+  @apply bg-gradient-to-r from-success-600 to-success-700 hover:from-success-700 hover:to-success-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-success-300 border border-success-500;
+}
+
+.btn-danger {
+  @apply bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-red-300 border border-red-500;
+}
+
+.btn-accent {
+  @apply bg-gradient-to-r from-accent-600 to-accent-700 hover:from-accent-700 hover:to-accent-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-accent-300 border border-accent-500;
+}
+
+.btn-luxury {
+  @apply bg-gradient-to-r from-luxury-600 to-luxury-700 hover:from-luxury-700 hover:to-luxury-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-luxury-300 border border-luxury-500;
+}
+
+/* Professional input styles */
+.input-modern {
+  @apply w-full px-4 py-3 bg-white border border-neutral-300 rounded-lg text-neutral-800 placeholder-neutral-500 focus:outline-none focus:ring-4 focus:ring-primary-300 focus:border-primary-500 transition-all duration-300 shadow-sm;
+}
+
+/* Professional card styles */
+.card-modern {
+  @apply bg-white border border-neutral-200 rounded-xl shadow-sm transition-all duration-300 hover:shadow-lg;
+}
+
+.card-luxury {
+  @apply bg-gradient-to-br from-white to-neutral-50 border border-neutral-200 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl;
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2s infinite;
+}
